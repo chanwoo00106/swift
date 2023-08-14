@@ -95,8 +95,8 @@
 		6449F5ED2A890F3200AB17C7 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				6449F5EE2A890F3200AB17C7 /* WeatherApp.swift */,
 				6449F5F02A890F3200AB17C7 /* ContentView.swift */,
+				6449F5EE2A890F3200AB17C7 /* WeatherApp.swift */,
 				6449F5F22A890F3300AB17C7 /* Assets.xcassets */,
 				6449F5F42A890F3300AB17C7 /* Weather.entitlements */,
 				6449F5F52A890F3300AB17C7 /* Preview Content */,
