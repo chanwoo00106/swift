@@ -12,10 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, Color("lightBlue")]),
-                           startPoint: .topLeading,
-                           endPoint: .bottomTrailing)
-            .edgesIgnoringSafeArea(.all)
+            BackgroundView()
             
             VStack {
                 Text("강진 마량")
@@ -55,6 +52,18 @@ struct ContentView: View {
                                    temperture: 25)
                 }
                 Spacer()
+                
+                Button {
+                    print("hello world")
+                } label: {
+                    Text("Change Day Time")
+                        .frame(width: 280, height: 50)
+                        .background(Color.white)
+                        .font(.system(size: 20, weight: .bold, design: .default))
+                        .cornerRadius(10)
+                }
+                
+                Spacer()
             }
         }
     }
@@ -85,5 +94,14 @@ struct WeatherDayView: View {
                 .font(.system(size: 28, weight: .medium))
                 .foregroundColor(.white)
         }
+    }
+}
+
+struct BackgroundView: View {
+    var body: some View {
+        LinearGradient(gradient: Gradient(colors: [.blue, Color("lightBlue")]),
+                       startPoint: .topLeading,
+                       endPoint: .bottomTrailing)
+        .edgesIgnoringSafeArea(.all)
     }
 }
