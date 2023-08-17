@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, .white]),
+            LinearGradient(gradient: Gradient(colors: [.blue, Color("lightBlue")]),
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
             .edgesIgnoringSafeArea(.all)
@@ -34,8 +34,8 @@ struct ContentView: View {
                         .font(.system(size: 70, weight: .medium))
                         .foregroundColor(.white)
                 }
+                .padding(.bottom, 40)
                 
-                Spacer()
                 
                 HStack(spacing: 20) {
                     WeatherDayView(dayOfWeek: "TUE",
